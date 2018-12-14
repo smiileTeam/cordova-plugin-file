@@ -20,10 +20,16 @@
 */
 
 (function () {
+
+
+
     /* global require */
 
     // Only Chrome uses this file.
+    //don't ask file request on browser, this plugin is not used in browser;
     if (!require('./isChrome')()) {
+        return;
+    } else {
         return;
     }
 
